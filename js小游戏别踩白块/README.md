@@ -1,7 +1,7 @@
 # js小游戏 #
 使用js做的一个别踩白块的游戏。
 
-[demo](https://memory9527.github.io/project/js%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%88%AB%E8%B8%A9%E7%99%BD%E5%9D%97/index.html)
+## [demo](https://memory9527.github.io/project/js%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%88%AB%E8%B8%A9%E7%99%BD%E5%9D%97/index.html) ##
 ## 游戏说明： ##
 
 点击所有从上往下落的黑色方块使其消失，每点击一个黑色方块的1分，获得50分游戏胜利。每达到一定分数，方块下落速度就会加快。
