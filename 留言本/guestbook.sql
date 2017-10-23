@@ -30,6 +30,7 @@ CREATE TABLE `guestbook` (
   `createtime` int(10) unsigned NOT NULL DEFAULT '0',
   `reply` text,
   `replytime` int(10) unsigned DEFAULT NULL,
+  `status` tinyint(1) unsigned DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
