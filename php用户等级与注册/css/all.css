@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+i{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+input{
+    outline: none;
+    border:none;
+}
+
+html,body{
+    width:100%;
+    font-size: 14px;
+}
+
+header{
+    width:100%;
+    height: 110px;
+    box-shadow: 10px 10px 10px rgba(111,111,111,.5);
+    position: relative;
+
+}
+
+.login{
+    font-size: 18px;
+    line-height: 34px;
+    position: absolute;
+    left:20px;
+    top: 28px;
+    padding-left:20px;
+    font-weight: bold;
+}
+.reg{
+    font-size: 18px;
+    line-height: 34px;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    left: 90px;
+    top:28px;
+    padding-left: 20px;
+    font-weight:bold;
+}
+
+.register{
+    width: 400px;
+    margin: 0 auto;
+    padding-top:40px;
+    position: relative;
+}
+
+fieldset{
+    width:100%;
+    height: 52px;
+    padding-bottom: 30px;
+    border: none;
+}
+
+.box{
+    width:100%;
+    height:100%;
+    line-height: 52px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.box.error{
+    border:1px solid red;
+}
+
+
+
+.box.right i{
+    width:20px;
+    height: 20px;
+    background: url(../images/right.png) no-repeat center center;
+    position: absolute;
+    top:50%;
+    margin-top: -10px;
+    right: 10px;
+
+}
+/*提示信息样式设置*/
+.tip {
+    width:100%;
+    line-height: 30px;
+    font-size: 12px;
+}
+.tip i{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tip span{
+    color: #CCCCCC;
+}
+/*提示信息隐藏样式*/
+.tip.hide{
+    display: none;
+}
+/*提示信息默认样式*/
+.tip.default i {
+    background: url(../images/default.png) no-repeat center center;
+}
+.tip.default span{
+    color: #ccc;
+}
+/*提示信息错误样式*/
+.tip.error i {
+    background: url(../images/error.png) no-repeat center center;
+}
+.tip.error span{
+    color: red;
+}
+/*提示信息密码弱*/
+.tip.ruo i {
+    background: url(../images/ruo.png) no-repeat center center;
+}
+/*提示信息密码中*/
+ .tip.zhong i {
+    background: url(../images/zhong.png) no-repeat center center;
+}
+/*提示信息密码中*/
+.tip.qiang i {
+    background: url(../images/qiang.png) no-repeat center center;
+}
+/*京东用户注册协议*/
+
+.xieyi .box.error{
+    line-height: normal;
+    padding: 0;
+    border: 1px solid red;
+}
+
+/*注册*/
+input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    font:bold 18px/40px "宋体";
+    color: white;
+    background-color: darkred;
+    outline-color: white;
+}
+
+input[type="submit"]:hover{
+    background-color:red;
+}
