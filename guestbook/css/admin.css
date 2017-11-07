@@ -1,0 +1,93 @@
+body{
+    font: 14px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333;
+    display: block;
+}
+
+
+
+.main{
+    margin-left:30%;
+    width: 40%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+@media (max-width: 792px) {
+    .main{
+        width: 100%;
+        margin: auto;
+    }
+}
+.header{
+    padding: 10px 15px;
+    border-color: #ddd;
+    border-bottom: 1px solid transparent;
+    background-color: #f5f5f5   ;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-body{
+    padding: 15px;
+}
+.form-group:before,.form-group:after{
+    display: table;
+    content: "";
+}
+
+.form-group:after{
+    clear: both;
+}
+
+
+label{
+    padding:7px 15px 0px;
+    margin-bottom: 0;
+    text-align: right;
+    width:16.6%;
+    font-size: 1.2em;
+    font-weight: bold;
+    float: left;
+}
+
+.input-group{
+    width:66.66%;
+    float: left;
+    opacity
+}
+input[type="text"],input[type="password"]{
+    display: block;
+    width: 100%;
+    height: 34px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    margin-bottom: 10px;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+    border-color: #66afe9;
+    -webkit-box-shadow:  0 0 8px rgba(102,175,233,.6);;
+    -moz-box-shadow:  0 0 8px rgba(102,175,233,.6);;
+    box-shadow:  0 0 8px rgba(102,175,233,.6);;
+}
+
+
+#sub{
+    display: inline-block;
+    padding: 6px 12px ;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 34%;
+}
+#sub:hover{
+    background-color: #ccc;
+}
