@@ -1,4 +1,4 @@
-<?php
+    <?php
 if(!isset($_POST['submit'])){
     exit("非法访问");
 }
