@@ -17,5 +17,5 @@ class DB{
             self::$con->close();
             self::$con = null;
         }
-    }
+     }
 }
