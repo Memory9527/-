@@ -39,7 +39,7 @@ function checkUser(user)
 _END;
 
 $error = $user = $pass = "";
-if(isset($_SESSION['user']){
+if(isset($_SESSION['user'])){
 	$_SESSION=array();
 	if(session_id()!="" || isset($_COOKIE[session_name()]))
 		setcookie(session_name(),'',time()-2592000,'/');

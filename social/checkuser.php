@@ -1,6 +1,6 @@
 <?php
-//检测用户名是否可用
 require_once 'config.php';
+//检测用户名是否可用
 if(isset($_POST['user'])){
     $user = sanitizeString($_POST['user']);
     $result = queryMysql("Select * FROM members WHERE user='$user'");

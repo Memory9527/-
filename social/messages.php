@@ -8,7 +8,7 @@ if(isset($_GET['view'])){
     $view = $user;
 }
 
-
+//添加留言
 if(isset($_POST['text'])){
     $text = sanitizeString($_POST['text']);
     if($text!="") {
@@ -20,17 +20,19 @@ if(isset($_POST['text'])){
     }
 }
 
+//删除留言
 if(isset($_GET['erase'])){
     $id = sanitizeString($_GET['erase']);
     $sql = "DELETE FROM messages WHERE id='$id'";
     queryMysql($sql);
 }
-
+//显示哪个用户的留言界面
 if($view==$user){
     $name = "Your";
 }else{
     $name = "<a href='members.php?view=$view'>$view</a>'s";
 }
+
 if($view !="") {
     echo "<div class='main'><h3>$name Message</h3>";
     showProfile($view);
@@ -44,10 +46,11 @@ if($view !="") {
       <input type='reset' value='reset'>
       </form><br>
 END;
-
+//查询留言
     $reslut = queryMysql("SELECT * FROM messages WHERE recip='$view' ORDER BY time DESC");
     if($num=$reslut->num_rows){
         while($row=$reslut->fetch_assoc()){
+            //显示公开的及用户相关的留言
             if($row['pm']==0||$row['auth']==$user||$row['recip']==$user){
                 echo date("F j, Y, g:i a:",$row['time']);
                 echo " <a href='messages.php?view=".$row['auth']."'>".$row['auth']."</a> ";

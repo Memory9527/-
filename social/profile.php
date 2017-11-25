@@ -2,7 +2,10 @@
 require_once 'header.php';
 if(!$loggedin) die();
 echo "<div class='main'><h3>Your Profile</h3>";
+//查询简介
 $result = queryMysql("SELECT * FROM profiles WHERE user='$user'");
+
+//更改简介
 if(isset($_POST['text'])){
     $text = sanitizeString($_POST['text']);
     $text = preg_replace('/\s\s+/', ' ', $text);
@@ -16,6 +19,8 @@ if(isset($_POST['text'])){
     }
     else $text= "";
 }
+
+//插入缩略图
 if(isset($_FILES['image']['name'])){
     $saveto = "$user.jpg";
     move_uploaded_file($_FILES['image']['tmp_name'],$saveto);
